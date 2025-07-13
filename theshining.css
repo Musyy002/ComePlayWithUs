@@ -1,0 +1,89 @@
+body {
+    background: #000054;
+    color: #0ff;
+    font-family: 'Press Start 2P', monospace;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .title {
+    font-size: 20px;
+    margin: 20px;
+    color: #fff;
+    text-shadow: 0 0 5px red;
+  }
+  
+  #game-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  canvas {
+    border: 3px solid #0ff;
+    background: #111;
+    image-rendering: pixelated;
+  }
+  
+  #info {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  #game-over-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000d9;
+    color: #0ff;
+    font-family: 'Press Start 2P', monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    text-align: center;
+  }
+  
+  #game-over-screen h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px red;
+    animation: flicker 1s infinite alternate;
+  }
+  
+  #game-over-screen .btns button {
+    font-size: 16px;
+    padding: 12px 20px;
+    margin: 10px;
+    border: 2px solid #0ff;
+    background: black;
+    color: #0ff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #game-over-screen .btns button:hover {
+    background: #0ff;
+    color: black;
+  }
+
+  #lives-ui {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+  }
+  
+  
+.hidden {
+    display: none !important;
+  }
+  
+  @keyframes flicker {
+    0% { opacity: 1; }
+    100% { opacity: 0.6; }
+  }
+    

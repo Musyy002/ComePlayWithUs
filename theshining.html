@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>THE SHINING.EXE</title>
+  <link rel="stylesheet" href="theshining.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1 class="title">THE SHINING.EXE</h1>
+  <div id="game-wrapper">
+    <canvas id="game" width="480" height="480"></canvas>
+    <div id="lives-ui">
+      <!-- Hearts will be drawn on canvas, but this can be used for overlay text if needed -->
+    </div>
+    <div id="info">
+      <p>Time Left: <span id="timer">60</span>s</p>
+    </div>
+  </div>
+
+  <div id="game-over-screen" class="hidden">
+    <h1>GAME OVER</h1>
+    <div class="btns">
+      <button onclick="location.href='sec.html'">GO BACK</button>
+      <button onclick="location.reload()">RESTART</button>
+    </div>
+  </div>
+
+  <script src="theshining.js"></script>
+</body>
+</html>
